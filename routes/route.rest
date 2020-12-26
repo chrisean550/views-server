@@ -1,0 +1,35 @@
+GET http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username":"chrisean550",
+    "email": "czn1@pitt.edu",
+    "fname": "Chrisean",
+    "lname": "Nichols",
+    "pwd": "550748"
+}
+
+###
+
+GET http://localhost:3000/users/5fd94e3ecb98c0290436a486
+
+###
+
+DELETE  http://localhost:3000/users/5fd94e3ecb98c0290436a486
+
+###
+
+PATCH http://localhost:3000/users/5fd94e3ecb98c0290436a486
+Content-Type: application/json
+
+{
+    "username":"chrisean551",
+    "email": "czn2@pitt.edu",
+    "fname": "Chrisean",
+    "lname": "Nichols",
+    "pwd": "550748"
+}
