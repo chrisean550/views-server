@@ -6,7 +6,7 @@ const router = express.Router()
 //schema
 const Post = require('../models/post')
 
-//
+
 //get all post
 router.get('/', async (req, res) =>{
     try {
@@ -38,7 +38,7 @@ router.post('/', async (req, res) =>{
     }
 })
 
-//delete one user
+//delete one post
 router.delete('/:id', getPostById, async (req, res) =>{
     try{
         await res.post.remove()
